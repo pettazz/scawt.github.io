@@ -9,6 +9,7 @@ tags:
   - Russia
   - Spooky
   - Impractical Vehicles
+  - WNV
 header:
   teaser: /assets/images/comics/4.15.19.BabaYagaTease.jpg
 classes: wide
