@@ -13,4 +13,4 @@ header:
   teaser: /assets/images/comics/4.20.19.SixPenceTease.jpg
 classes: wide
 ---
-![The train station is flexing on me](/assets/images/comics/4.20.19.SixPence.jpg)
+![Six Pence](/assets/images/comics/4.20.19.SixPence.jpg "Ahh yes, that classic comfort food we all know: whatever random animals I found outside, as a pie")
