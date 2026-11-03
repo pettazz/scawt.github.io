@@ -331,4 +331,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      entries_layout: grid  # Forces all post lists into a grid
 
