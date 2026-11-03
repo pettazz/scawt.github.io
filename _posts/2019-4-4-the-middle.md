@@ -13,4 +13,4 @@ header:
   teaser: /assets/images/comics/4.4.19.NewtonCentreTease.jpg
 classes: wide
 ---
-![The train station is flexing on me](/assets/images/comics/4.4.19.NewtonCentre.jpg)
+![Newton](/assets/images/comics/4.4.19.NewtonCentre.jpg "I think this train station is flexing its generational wealth at me")
