@@ -2,6 +2,10 @@
 main:
   - title: "Home"
     url: https://scawtpockets.com
+  - title: "Blog"
+    url: https://scawtpockets.com/categories/#blog
+  - title: "Tags"
+    url: hhttps://scawtpockets.com/tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
