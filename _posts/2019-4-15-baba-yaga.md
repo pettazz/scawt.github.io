@@ -14,4 +14,4 @@ header:
   teaser: /assets/images/comics/4.15.19.BabaYagaTease.jpg
 classes: wide
 ---
-![The shack got gams though](/assets/images/comics/4.15.19.BabaYaga.jpg)
+![Baba Yaga](/assets/images/comics/4.15.19.BabaYaga.jpg "The shack got gams though")
