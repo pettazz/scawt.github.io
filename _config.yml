@@ -331,6 +331,15 @@ defaults:
       share: false
       related: true
       classes: wide
+  # _comic
+  - scope:
+      path: ""
+      type: comic
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      classes: wide
 
 # collections
 collections:
