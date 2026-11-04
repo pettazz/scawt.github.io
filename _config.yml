@@ -332,3 +332,8 @@ defaults:
       related: true
       classes: wide
 
+# collections
+collections:
+  comic:
+    output: true
+    permalink: /:collection/:path/
