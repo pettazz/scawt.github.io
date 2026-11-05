@@ -2,8 +2,6 @@
 title: "Scrooge's Travails"
 excerpt: "A holiday comic that I appear to have made in June of 2019. Normal stuff!"
 layout: single
-categories:
-  - Comics
 tags: 
   - Christmas
   - Ghosts
