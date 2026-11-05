@@ -2,8 +2,6 @@
 title: "Just Say 'Middle' Please"
 excerpt: "I dunno who let The French make this decision."
 layout: single
-categories:
-  - Comics
 tags: 
   - Boston
   - MBTA
