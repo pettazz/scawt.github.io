@@ -4,13 +4,13 @@ layout: archive
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 {{ content }}
-<h3 class="archive__subtitle">Latest Comic</h3>
+<h1 class="page__title">Latest Comic</h1>
 {% assign latest_comic = site.comic | sort: "date" | reverse | first %}
 
 {% if latest_comic %}
   <article class="page__content" itemscope itemtype="https://schema.org">
     <header>
-      <h3 class="page__title" itemprop="headline">
+      <h3 class="archive__subtitle" itemprop="headline">
         <a href="{{ latest_comic.url | relative_url }}">{{ latest_comic.title }}</a>
       </h3>
       {% if latest_comic.date %}
@@ -27,15 +27,14 @@ layout: archive
 {% else %}
   <p>No comics found.</p>
 {% endif %}
-<br /> <br />
 
-<h3 class="archive__subtitle">Latest Blog Post</h3>
+<h1 class="page__title">Latest Blog Post</h1>
 {% assign latest_blog = site.blog | sort: "date" | reverse | first %}
 
 {% if latest_blog %}
   <article class="page__content" itemscope itemtype="https://schema.org">
     <header>
-      <h3 class="page__title" itemprop="headline">
+      <h3 class="archive__subtitle" itemprop="headline">
         <a href="{{ latest_blog.url | relative_url }}">{{ latest_blog.title }}</a>
       </h3>
       {% if latest_blog.date %}
