@@ -1,7 +1,7 @@
 ---
 title: Comic
 layout: collection
-permalink: /comic/
+permalink: /comic-archive/
 collection: comic
 entries_layout: grid
 classes: wide
