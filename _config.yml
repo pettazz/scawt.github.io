@@ -348,3 +348,8 @@ collections:
     permalink: /:collection/:path/
     sort_field: 'date'
     sort_reverse: true
+  blog:
+    output: true
+    permalink: /:collection/:path/
+    sort_field: 'date'
+    sort_reverse: true
