@@ -4,18 +4,53 @@ layout: archive
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 {{ content }}
+<h3 class="archive__subtitle">Latest Comic</h3>
+{% assign latest_comic = site.comic | sort: "date" | reverse | first %}
 
-<h1 class="archive__subtitle">{{ site.data.ui-text[locale].recent_posts | default: "Recent Posts" }}</h1>
+{% if latest_comic %}
+  <article class="page__content" itemscope itemtype="https://schema.org">
+    <header>
+      <h3 class="page__title" itemprop="headline">
+        <a href="{{ latest_comic.url | relative_url }}">{{ latest_comic.title }}</a>
+      </h3>
+      {% if latest_comic.date %}
+        <p class="page__meta"><time datetime="{{ latest_comic.date | date_to_xmlschema }}">{{ latest_comic.date | date: "%B %d, %Y" }}</time></p>
+      {% endif %}
+    </header>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
+    <div class="page__inner-wrap">
+      <section class="page__content" itemprop="text">
+        {{ latest_comic.content }}
+      </section>
+    </div>
+  </article>
 {% else %}
-  {% assign posts = site.posts %}
+  <p>No comics found.</p>
 {% endif %}
+<br /> <br />
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html locale=locale entries=posts type=entries_layout %}
-</div>
+<h3 class="archive__subtitle">Latest Blog Post</h3>
+{% assign latest_blog = site.blog | sort: "date" | reverse | first %}
+
+{% if latest_blog %}
+  <article class="page__content" itemscope itemtype="https://schema.org">
+    <header>
+      <h3 class="page__title" itemprop="headline">
+        <a href="{{ latest_blog.url | relative_url }}">{{ latest_blog.title }}</a>
+      </h3>
+      {% if latest_blog.date %}
+        <p class="page__meta"><time datetime="{{ latest_blog.date | date_to_xmlschema }}">{{ latest_blog.date | date: "%B %d, %Y" }}</time></p>
+      {% endif %}
+    </header>
+
+    <div class="page__inner-wrap">
+      <section class="page__content" itemprop="text">
+        {{ latest_blog.content }}
+      </section>
+    </div>
+  </article>
+{% else %}
+  <p>No blogs found.</p>
+{% endif %}
 
 {% include paginator.html locale=locale %}
