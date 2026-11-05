@@ -4,8 +4,8 @@ main:
     url: https://scawtpockets.com
   - title: "Blog"
     url: https://scawtpockets.com/categories/#blog
-  - title: "Tags"
-    url: https://scawtpockets.com/tags/
+  - title: "Comics"
+    url: https://scawtpockets.com/comic/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
