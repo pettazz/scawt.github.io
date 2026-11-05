@@ -346,3 +346,5 @@ collections:
   comic:
     output: true
     permalink: /:collection/:path/
+    sort_field: 'date'
+    sort_reverse: true
