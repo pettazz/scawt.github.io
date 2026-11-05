@@ -4,3 +4,25 @@ author_profile: true
 entries_layout: grid
 classes: wide
 ---
+{% assign latest_comic = site.comic | sort: "date" | reverse | first %}
+
+{% if latest_comic %}
+  <article class="page__content" itemscope itemtype="https://schema.org">
+    <header>
+      <h1 class="page__title" itemprop="headline">
+        <a href="{{ latest_comic.url | relative_url }}">{{ latest_comic.title }}</a>
+      </h1>
+      {% if latest_comic.date %}
+        <p class="page__meta"><time datetime="{{ latest_comic.date | date_to_xmlschema }}">{{ latest_comic.date | date: "%B %d, %Y" }}</time></p>
+      {% endif %}
+    </header>
+
+    <div class="page__inner-wrap">
+      <section class="page__content" itemprop="text">
+        {{ latest_comic.content }}
+      </section>
+    </div>
+  </article>
+{% else %}
+  <p>No comics found.</p>
+{% endif %}
