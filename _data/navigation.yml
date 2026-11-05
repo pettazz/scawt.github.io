@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: https://scawtpockets.com
   - title: "Blog"
-    url: https://scawtpockets.com/categories/#blog
+    url: https://scawtpockets.com/blog/
   - title: "Comics"
     url: https://scawtpockets.com/comic-archive/
   # - title: "About"
