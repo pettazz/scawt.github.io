@@ -2,8 +2,6 @@
 title: "DANGEROUS WEED CONTENT"
 excerpt: "*Six* Pence!? In THIS economy!??!"
 layout: single
-categories:
-  - Comics
 tags: 
   - Nursery Rhymes
   - Birds
