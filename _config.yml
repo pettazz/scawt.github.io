@@ -347,9 +347,11 @@ collections:
     output: true
     permalink: /:collection/:path/
     sort_field: 'date'
+    show_date: true
     sort_reverse: true
   blog:
     output: true
     permalink: /:collection/:path/
     sort_field: 'date'
+    show_date: true
     sort_reverse: true
