@@ -4,7 +4,7 @@ layout: archive
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 {{ content }}
-<h1 class="page__title"><u><b>Latest Comic</b></u></h1>
+<h1 class="page__title"><u><b><i>Latest Comic</b></u></i></h1>
 {% assign latest_comic = site.comic | sort: "date" | reverse | first %}
 
 {% if latest_comic %}
@@ -27,8 +27,8 @@ layout: archive
 {% else %}
   <p>No comics found.</p>
 {% endif %}
-
-<h1 class="page__title">Latest Blog Post</h1>
+<hr style="width:50%">
+<h1 class="page__title"><u><b><i>Latest Blog Post</b></u></i></h1>
 {% assign latest_blog = site.blog | sort: "date" | reverse | first %}
 
 {% if latest_blog %}
