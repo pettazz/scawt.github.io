@@ -4,7 +4,7 @@ layout: archive
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 {{ content }}
-<h1 class="page__title">Latest Comic</h1>
+<h1 class="page__title"><u><b>Latest Comic</b></u></h1>
 {% assign latest_comic = site.comic | sort: "date" | reverse | first %}
 
 {% if latest_comic %}
@@ -34,7 +34,7 @@ layout: archive
 {% if latest_blog %}
   <article class="page__content" itemscope itemtype="https://schema.org">
     <header>
-      <h3 class="archive__subtitle" itemprop="headline">
+      <h3 class="page__title" itemprop="headline">
         <a href="{{ latest_blog.url | relative_url }}">{{ latest_blog.title }}</a>
       </h3>
       {% if latest_blog.date %}
