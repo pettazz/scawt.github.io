@@ -10,7 +10,7 @@ layout: archive
 {% if latest_comic %}
   <article class="page__content" itemscope itemtype="https://schema.org">
     <header>
-      <h3 class="archive__subtitle" itemprop="headline">
+      <h3 class="page__title" itemprop="headline">
         <a href="{{ latest_comic.url | relative_url }}">{{ latest_comic.title }}</a>
       </h3>
       {% if latest_comic.date %}
